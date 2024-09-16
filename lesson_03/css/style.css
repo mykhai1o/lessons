@@ -1,0 +1,52 @@
+@import url('reset.css');
+
+header li {
+    color: rgb(241, 199, 143);
+}
+
+* {
+    color: rgb(126, 126, 126);
+}
+p {
+    color: rgb(220, 141, 141);
+}
+.task{
+    color: brown;
+}
+.intro * {
+    color: rgb(129, 195, 195);
+}
+.intro h1 {
+    color: rgb(18, 126, 45);
+}
+
+.common-info *{
+    color: rgb(128, 98, 156);
+}
+.common-info .title {
+    color: blue;
+}
+.title.name {
+    color: black;
+}
+#modern h3 {
+    color: rgb(18, 123, 188);
+}
+
+.history h3,
+.history p {
+    color: rgb(18, 123, 188);
+}
+.nowadays p{
+    color: rgb(240, 250, 53);
+}
+
+.history-first-part ~ p {
+    color: rgb(94, 204, 57);
+}
+.history-first-part + p {
+    color: aquamarine;
+}
+[class*="rig"] p {
+    color: rgb(92, 5, 5);
+}
