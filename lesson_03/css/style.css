@@ -20,7 +20,7 @@ p {
     color: rgb(18, 126, 45);
 }
 
-.common-info *{
+.common-info > p{
     color: rgb(128, 98, 156);
 }
 .common-info .title {
