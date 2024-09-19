@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap');
+/* font-family: "Montserrat", sans-serif; 300*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap');
+/* font-family: "Roboto", sans-serif; 400,500,700 */
+@import url('fonts.css');
+/* font-family: 'Nunito', sans-serif; 400, 700*/
+
+/* Figma */
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:regular,600&display=swap');
+/* font-family: "Work Sans", sans-serif; 400, 600*/
+@import url('https://fonts.googleapis.com/css?family=DM+Sans:regular,700&display=swap');
+/* font-family: "DM Sans", sans-serif; 400, 700*/
+@import url('reset.css');
+
+body{
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.8;
+}
+p, ul {
+    text-align: left;
+}
+.article {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #808080;
+    line-height: 1;
+    text-align: center;
+}
+li {
+    line-height: 1;
+}
+li:last-child {
+    color: rgb(189, 84, 84);
+}
+a{
+    font-size: 18px;
+    text-decoration: underline;
+}
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+h2 {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.intro {
+    font-size: 24px;
+    line-height: 2;
+}
+.italic {
+    font-style: italic;
+}
+.bold {
+    font-weight: 700;
+}
+/*.frontman-words {
+}
+.comments {
+}
+.container {
+}
+.outro {
+} */
+footer, footer p {
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+
+/* Figma */
+/* ____________ */
+.figma-work {
+    text-align: left;
+}
+.figma-work h2 {
+    text-transform: none;
+}
+.professional {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    color: #556070;
+    font-size: 18px;
+    line-height: 1.33;
+}
+.professional h2 {
+    color: #132238;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 1.31;
+    
+}
+.about {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    color: #474464;
+    font-size: 24px;
+    line-height: 1.75;
+}
+.about h2 {
+    font-weight: 700;
+    font-size: 88px;
+    color: #1E1B39;
+    line-height: 1.07;
+}
+.introduce {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #505F98;
+    line-height: 1.66;
+}
+.introduce h2 {
+    font-weight: 500;
+    font-size: 50px;
+    color: #091133;
+    line-height: 1.32;
+}
