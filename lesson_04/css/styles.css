@@ -18,6 +18,9 @@ body{
     text-align: center;
     font-size: 20px;
     line-height: 1.8;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    white-space: normal;
 }
 p, ul {
     text-align: left;
@@ -38,12 +41,15 @@ li:last-child {
 a{
     font-size: 18px;
     text-decoration: underline;
+    text-decoration-color: rgb(255, 221, 221);
+	text-decoration-style: wavy;
 }
 h1 {
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 300;
     line-height: 1.6;
+    text-shadow: 3px 3px 5px rgb(223, 63, 63);
 }
 h2 {
     font-family: "Roboto", sans-serif;
