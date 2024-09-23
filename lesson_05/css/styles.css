@@ -1,0 +1,154 @@
+@import url('reset.css');
+
+@import url('https://fonts.googleapis.com/css?family=Manrope:regular,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:regular,500&display=swap');
+
+
+h1 {
+    font-size: 50px;
+    margin-block-end: 50px;
+    font-weight: 700;
+}
+
+.container1 {
+    inline-size: 1800px;
+    color: #fff;
+    background-color: #141414;
+    font-family: 'Manrope', sans-serif;
+    line-height: 150%;
+    color: #999;
+    padding: 80px;
+    /* відділення від іншого завдання */
+    margin-block-end: 50px;
+}
+.container1 h2, .container1 h3 {
+    color: #fff;
+}
+.container__text {
+    padding-inline-end: 22%;
+    font-size: 18px;
+    margin-block-end: 80px;
+}
+.container__text h2 {
+    font-size: 38px;
+    font-weight: 700;
+    padding-block-end: 40px;
+}
+/* .container__cards {
+} */
+.card {
+    display: inline-block;
+    inline-size: 512px;
+    margin-inline-end: 30px;
+    margin-block-end: 30px;
+    padding: 50px;
+    background-color: #0F0F0F;
+    font-size: 0;
+}
+/* .card__title {
+} */
+.card__title img {
+    padding-inline-end: 16px;
+    vertical-align: middle;
+}
+.card__title h3 {
+    font-weight: 600;
+    font-size: 24px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.card__title-icon {
+    display: inline-block;
+    border-radius: 16px;
+}
+.card p {
+    padding-block-start: 30px;
+    font-size: 18px;
+}
+
+/* Task 2 */
+.container2 {
+    max-inline-size: 540px;
+    margin-inline-start: 165px;
+    font-family: 'Roboto', sans-serif;
+    /* відділення від іншого завдання */
+    margin-block-end: 50px;
+}
+.text-wrapper {
+    color: #505F98;
+    font-size: 18px;
+    line-height: 166.66%;
+    margin-block-end: 70px;
+}
+.text-wrapper h2 {
+    color: #091133;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 132%;
+    padding-block-end: 20px;
+}
+.text-wrapper p {
+    padding-block-end: 20px;
+}
+.button_wrapper {
+    color: #fff;
+}
+.button_wrapper a {
+    background-color: #111B47;
+    font-size: 16px;
+    max-block-size: 36px;
+    max-inline-size: 189px;
+    line-height: 162.5%;
+    padding-inline: 40px;
+    padding-block: 10px;
+    margin-inline-end: 30px;
+    border-radius: 2px;
+}
+
+/* Task 3 */
+.container3 {
+    max-inline-size: 554px;
+    margin-inline-start: 165px;
+    font-family: 'Roboto', sans-serif;
+}
+.text-wrapper3 {
+    color: #6F7CB2;
+    font-size: 16px;
+    line-height: 162.5%;
+}
+
+.text-wrapper3 h2 {
+    color: #091133;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 133%;
+    padding-block-end: 16px;
+}
+.text-wrapper3 p {
+    padding-block-end: 16px;
+    
+}
+/* .cards-wrapper3 {
+
+} */
+.card3 {
+    display: inline-block;
+    inline-size: 245px;
+    margin-inline-end: 30px;
+    margin-block-end: 30px;
+}
+.card3 img {
+    inline-size: 36px;
+    margin-block-end: 20px;
+}
+.card3 h3 {
+    font-weight: 500;
+    line-height: 162.5%; 
+    margin-block-end: 6px;
+}
+.card3 p {
+    color: #5D6970;
+    font-size: 12px;
+    line-height: 150%;
+}
