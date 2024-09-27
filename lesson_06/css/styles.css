@@ -43,6 +43,7 @@ header, footer {
 .task1 {
     color: #999;
     font-family: 'Manrope', sans-serif;
+    font-size: 0;
 }
     
 .banner__main {
@@ -115,6 +116,7 @@ header, footer {
     padding: 15px;
     text-align: center;
     max-inline-size: 100%;
+    font-size: 0;
     
 }
 .text-block {
@@ -130,6 +132,7 @@ header, footer {
     letter-spacing: 3px;
     text-transform: uppercase;
     margin-block-end: 20px;
+    font-size: 16px;
 }
 .text-block h3 {    
     color: #391400;
@@ -152,6 +155,7 @@ header, footer {
     margin-block-end: 16px;
     background: url('../img/check.png') left center / 32px no-repeat;
     padding-inline-start: 48px;
+    font-size: 16px;
 }
 .images-block {
     display: inline-block;
