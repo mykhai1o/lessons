@@ -76,8 +76,7 @@ header, footer {
 
 .banner__footer-text{
     min-inline-size: 320px;
-    max-inline-size: 100%;
-    inline-size: 1096px;
+    max-inline-size: 1096px;
     text-align: center;
     margin: 0px auto 0;
 }
