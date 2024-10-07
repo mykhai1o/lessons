@@ -1,0 +1,83 @@
+@import url('fonts.css');
+
+@import url('reset.css');
+
+
+.wrapper {
+    background-color: #001233;
+    color: #CAC0B3;
+    min-block-size: 100%;
+    overflow: hidden;
+    font-family: 'Town 10 Display', sans-serif;
+    font-weight: 900;
+    padding-inline: 15px;
+}
+
+header {
+    border-bottom: 1px solid #CAC0B3;
+    margin-block-end: 120px;
+}
+footer {
+    border-top: 1px solid #CAC0B3;
+    
+}
+header, footer {
+    max-inline-size: 1024px;
+    text-align: center;
+    margin-inline: auto;
+    padding-block: 40px;
+    padding-inline: 20px;
+    
+}
+h1 {
+    color: #FF595A; 
+    font-size: 48px;
+    margin-block-end: 80px;
+}
+main {
+    max-inline-size: 1024px;
+    margin: 0 auto;
+}
+.section {
+    margin: 0 auto;
+    border: 1px solid #CAC0B3;
+    font-size: 24px;
+    padding: 30px;
+    margin-block-end: 80px;
+}
+.article:not(:last-of-type) {
+    margin-block-end: 20px;
+}
+.article p {
+    vertical-align: middle;
+    display: inline-block;
+}
+.article img {
+    vertical-align: middle;
+    inline-size: 50px;
+}
+.article .main-picture {
+    inline-size: 100%;
+    margin-block-end: 15px;
+}
+.article .main-picture + p {
+    text-align: center;
+    display: block;
+}
+.article .picture {
+    inline-size: 300px;
+}
+
+.section2 {
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+}
+.section2 p {
+    margin-block-end: 30px;
+    font-size: 24px;
+}
+.section2 picture {
+    display: block;
+    margin-block-end: 20px;
+}
