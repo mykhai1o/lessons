@@ -1,0 +1,123 @@
+@import url('reset.css');
+
+.wrapper {
+    min-block-size: 100%;
+    /* overflow: hidden; */
+    overflow: clip;
+    font-size: 0;
+    line-height: 0;
+}
+
+.blocks {
+    padding-inline: 15px;
+    /* height: 200px; */
+}
+.blocks > div {
+    border: 3px solid rgb(32, 38, 38);
+    line-height: 1;
+}
+.blocks > div:not(:last-of-type) {
+    /* border-bottom: none; */
+    margin-block-end: 10px;
+}
+.block1 p, .block2 p, .block3 p {
+    padding: 15px;
+    text-align: center;
+    font-size: 32px;
+}
+.block1 {
+    background-color: aqua;
+}
+.block2 {
+    background-color:blueviolet;
+}
+.block3 {
+    background-color:cadetblue ;
+}
+
+
+
+
+/* Робота з relative */
+
+/* .block1 {
+    background-color: aqua;
+    position: relative;
+    top: 40px;
+    left: 44px;
+    z-index: 3;
+}
+.block1 p {
+    z-index: 6;
+
+}
+.block2 {
+    background-color:blueviolet;
+    position: relative;
+    z-index: 2;
+    
+}
+.block2 p {
+    z-index: 5;
+}
+.block3 {
+    background-color:cadetblue ;
+    position: relative;
+    bottom: 30px;
+    right: 10px;
+    z-index: 0;
+}
+.block3 p {
+    z-index: 4;
+} */
+
+
+/* Робота з absolute */
+
+/* .blocks {
+    position: relative;
+}
+
+.blocks div:nth-child(1){
+    position: absolute;
+    inset-block-start: 33%;
+}
+.blocks div:nth-child(2){
+    min-block-size: 100px;
+    top: 30px;
+}
+.blocks div:nth-child(3){
+    position: absolute;
+    top: 0px;
+    inset-inline-end: 15px;
+} */
+
+
+/* Робота з fixed */
+
+
+/* .blocks div:nth-child(2) {
+    position: fixed;
+    inset-block-end: 2%;
+    inset-inline-start: 35%;
+    z-index: -1;
+} */
+
+/* Робота з sticky */
+
+.blocks div:nth-child(2) {
+    position: sticky;
+    top: 0;
+}
+
+
+
+
+
+
+
+
+main p {
+    font-size: 24px;
+    line-height: 1;
+}
