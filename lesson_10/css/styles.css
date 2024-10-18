@@ -16,9 +16,12 @@
     border: 3px solid rgb(32, 38, 38);
     line-height: 1;
 }
-.blocks > div:not(:last-of-type) {
-    /* border-bottom: none; */
-    margin-block-end: 10px;
+.blocks > div:nth-child(1) {
+    border-bottom: none;
+    /* margin-block-end: 2px; */
+}
+.blocks > div:nth-child(3) {
+    border-top: none;
 }
 .block1 p, .block2 p, .block3 p {
     padding: 15px;
