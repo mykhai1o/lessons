@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css?family=Epilogue:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap');
+
+
+@import url('reset.css');
+
+.wrapper {
+    min-block-size: 100%;
+    /* overflow: hidden; */
+    overflow: clip;
+    background-color: #28293E;
+    color: #FDF0E9;
+    font-family: Epilogue;
+}
+
+.blocks {
+    padding-inline: 15px;
+    /* height: 200px; */
+}
+.blocks > div {
+    border: 3px solid rgb(32, 38, 38);
+    line-height: 1;
+}
+.blocks > div:nth-child(1) {
+    border-bottom: none;
+    /* margin-block-end: 2px; */
+}
+.blocks > div:nth-child(3) {
+    border-top: none;
+}
+.block1 p, .block2 p, .block3 p {
+    padding: 15px;
+    text-align: center;
+    font-size: 32px;
+}
+.block1 {
+    background-color: aqua;
+}
+.block2 {
+    background-color:blueviolet;
+}
+.block3 {
+    background-color:cadetblue ;
+}
+
+
+
+
+/* Робота з relative */
+
+/* .block1 {
+    background-color: aqua;
+    position: relative;
+    top: 40px;
+    left: 44px;
+    z-index: 3;
+}
+.block1 p {
+    z-index: 6;
+
+}
+.block2 {
+    background-color:blueviolet;
+    position: relative;
+    z-index: 2;
+    
+}
+.block2 p {
+    z-index: 5;
+}
+.block3 {
+    background-color:cadetblue ;
+    position: relative;
+    bottom: 30px;
+    right: 10px;
+    z-index: 0;
+}
+.block3 p {
+    z-index: 4;
+} */
+
+
+/* Робота з absolute */
+
+/* .blocks {
+    position: relative;
+}
+
+.blocks div:nth-child(1){
+    position: absolute;
+    inset-block-start: 33%;
+}
+.blocks div:nth-child(2){
+    min-block-size: 100px;
+    top: 30px;
+}
+.blocks div:nth-child(3){
+    position: absolute;
+    top: 0px;
+    inset-inline-end: 15px;
+} */
+
+
+/* Робота з fixed */
+
+
+/* .blocks div:nth-child(2) {
+    position: fixed;
+    inset-block-end: 2%;
+    inset-inline-start: 35%;
+    z-index: -1;
+} */
+
+/* Робота з sticky */
+
+.blocks div:nth-child(2) {
+    position: sticky;
+    top: 0;
+}
+
+main p {
+    font-size: 24px;
+    line-height: 1;
+}
+
+
+/* HOMEWORK */
+.task:not(:last-of-type), .testing {
+    margin-block-end: 100px;
+}
+.tasks h1:first-of-type {
+    margin-block-end: 10px;
+    text-align: center;
+    font-size: 40px;
+
+}
+.collage {
+    max-inline-size: 590px;
+    min-block-size: 590px;
+    padding: 15px;
+    margin: 0 auto;
+    position: relative;
+    /* border: 1px solid #fff; */
+}
+
+.light-circle {
+    position: absolute;
+    background-color:#32334C;
+    width: 370px;
+    height: 370px;
+    border-radius: 50%;
+    inset-inline-start: 17.5%;
+    inset-block-start: 17.5%;
+    /* z-index: 1; */
+
+}
+.first-background .square, .first-background .circle {
+    background-color: #b550f8;
+} 
+.second-background .square, .second-background .circle {
+    background-color: #f7cc47;
+}
+.first-background .square {
+    position: absolute;
+    inline-size: 245px;
+    block-size: 200px;
+    border-radius: 10px;
+    z-index: 1;
+    inset-block-start: 120px;
+}
+.first-background .circle {
+    position: absolute;
+    inline-size: 245px;
+    block-size: 245px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.second-background .square {
+    position: absolute;
+    inline-size: 245px;
+    block-size: 200px;
+    border-radius: 10px;
+    z-index: 1;
+    inset-block-end: 13%;
+    inset-inline-end: 15px;
+}
+.second-background .circle {
+    position: absolute;
+    inline-size: 245px;
+    block-size: 245px;
+    border-radius: 50%;
+    z-index: 1;
+    inset-block-end: 140px;
+    inset-inline-end: 15px;
+}
+.small-circle {
+    position: absolute;
+    z-index: 2;
+    background-color: #EF6D58;
+    inline-size: 112px;
+    block-size: 112px;
+    border-radius: 50%;
+    inset-inline-start: 53%;
+    inset-block-start: 5%;
+}
+.stars {
+    position: absolute;
+    inset-inline-start: 30%;
+    inset-block-start: 25px;
+}
+.laptop-picture {
+    position: absolute;
+    z-index: 3;
+    inset-inline-start: 35px;
+    inset-block-start: 35px;
+}
+.woman-picture {
+    position: absolute;
+    z-index: 5;
+    inset-block-end: 13%;
+    inset-inline-end: 15px;
+    border-radius: 10px;
+}
+.decore-picture {
+    position: absolute;
+    inset-inline-end: 15px;
+    inset-block-start: 13%;
+}
+.decore-line {
+    position: absolute;
+    inset-block-end: 28%;
+}
+.decor-arrow {
+    position: absolute;
+    inset-inline-end: 30%;
+    inset-block-end: 15px;
+}
+.collage__card {
+    position: absolute;
+    z-index: 5;
+    inset-block-end: 7%;
+    inset-inline-start: 12%;
+}
+/* .card {
+    position: absolute;
+    inline-size: 214px;
+    block-size: 117px;
+    background-color: #ffffff;
+    z-index: 15;
+    inset-block-end: 5%;
+    inset-inline-start: 12%;
+    border-radius: 10px;
+}
+.card .circle {
+    position: absolute;
+    background-color: #ef6d58;
+    inline-size: 21%;
+    block-size: 38%;
+    border-radius: 50%;
+    inset-inline-start: 20px;
+    inset-block-start: 20px;
+}
+.title {
+    position: absolute;
+    background-color: #dfe0e9;
+    inline-size: 48%;
+    block-size: 15%;
+    border-radius: 5px;
+    inset-inline-start: 38%;
+    inset-block-start: 25%;
+}
+.line:first-of-type {
+    position: absolute;
+    background-color: #dfe0e9;
+    inline-size: 48%;
+    block-size: 10%;
+    border-radius: 5px;
+    inset-inline-start: 38%;
+    inset-block-start: 95%;
+}
+.line:nth-child(2) {
+}
+.line:nth-child(3) {
+} */
+
+
+/* Second task  */
+
+.portfolio-section__info {
+    max-inline-size: 1440px;
+    margin:  0 auto;
+}
+.portfolio-section__text {
+    padding-inline-start: 140px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 660px;
+}
+.portfolio-section__button {
+    display: inline-block;
+}
+.portfolio-section__text h2 {
+    line-height: 2;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #EF6D58;
+    margin-block-end: 67px;
+}
+.portfolio-section__text p {
+    font-family: 'Epilogue';
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1.14;
+    letter-spacing: -1px;
+    margin-block-end: 80px;
+}
+.portfolio-section__button {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 18px 31px 15px;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.portfolio-section__button:hover {
+    border: 1px solid #f7cc47;
+    color: #f7cc47;
+    border-radius: 10px;
+    padding: 18px 31px 15px;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.portfolio-section__cards {
+    /* position: relative; */
+    margin: 0 auto;
+    max-inline-size: 1485px;
+    font-size: 0;
+}
+.card {
+    position: relative;
+    margin: 0 auto;
+    display: inline-block;
+    border: 1px solid #3A3C56;
+    padding: 15px;
+    inset-inline-start: 0;
+}
+.card:not(:first-child){
+    border-left: none;
+}
+.card img {
+    /* position: relative; */
+}
+.card__text {
+    position: absolute;
+    inset-block-end: 64px;
+    inset-inline-start: 48px;
+    z-index: 6;
+}
+.card__filter {
+    position: absolute;
+    background-color: #5C2000;
+    inline-size: 448px;
+    block-size: 577px;
+    z-index: 5;
+    inset-block-start: 15px;
+    opacity: 31.81%;
+}
+.card:hover  {
+    color: #f7cc47;
+}
+.card:hover .card__filter {
+    opacity: 40%;
+}
+.card:hover .card__text .card__category {
+    background-color: #f7cc47;
+}
+.card__category {
+    color: #391400;
+    background-color: #fff;
+    padding: 20px 16px 10px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-block-end: 30px;
+}
+.card__title {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.2;
+}
