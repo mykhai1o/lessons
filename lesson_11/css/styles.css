@@ -1,0 +1,280 @@
+@import url('reset.css');
+
+.wrapper {
+    overflow: hidden;
+    max-inline-size: 1000px;
+    margin: 0 auto;
+}
+
+.car {
+    position: absolute;
+    z-index: 50;
+    /* border: 1px solid black; */
+    inline-size: 481px;
+    block-size: 120px;
+
+    /* margin: 50px; */
+    transform: translate(250px, -150px);
+}
+
+
+.bamper {
+    inline-size: 68px;
+    block-size: 20px;
+    background-color: #f90000;
+    transform: translate(0, -85px);
+}
+.bamper__shadow {
+    background-color: #7d230f;
+    inline-size: 68px;
+    block-size: 5px;
+    transform: translate(0, 15px);
+}
+
+.hood {
+    inline-size: 68px;
+    block-size: 14px;
+    background-color: #f90000;
+    transform: translate(15px, -115px) rotate(-20deg);
+    position: relative;
+    z-index: -1;
+}
+.hood__shadow {
+    inline-size: 68px;
+    block-size: 10px;
+    background-color: #bf0202;
+    transform: translate(35px, 12px) rotate(-5deg);
+    position: relative;
+    z-index: -1;
+}
+
+.weel.first {
+    transform: translate(72px, 37px);
+}
+.weel.second {
+    /* position: absolute; */
+    transform: translate(347px, -45px);
+}
+.weel {
+    position: relative;
+    z-index: 60;
+    background-color: #fcfdfc;
+    /* background-color: #96ea96; */
+    inline-size: 82px;
+    block-size: 82px;
+    border-radius: 50%;
+    padding: 2px;
+    border: 13px solid #232522;
+}
+.disk {
+    border: 5px solid #787878;
+    background-color: #292929;
+    border-radius: 50%;
+    inline-size: 52px;
+    block-size: 52px;
+    /* inline-size: 32px;
+    block-size: 32px; */
+    transform-origin: center;
+    position: relative;
+}
+.disk .line {
+    position: absolute;
+    background-color: #787878;
+    block-size: 2px;
+    inline-size: 45px;
+    transform-origin: center;
+    inset-block-start: 48%;
+    inset-inline-start: -1px;
+    /* transform: translate(0, 20px); */
+}
+.disk .line:nth-child(2){
+    transform: rotate(22.5deg);
+}
+.disk .line:nth-child(3){
+    transform: rotate(45deg);
+}
+.disk .line:nth-child(4){
+    transform: rotate(67.5deg);
+}
+.disk .line:nth-child(5){
+    transform: rotate(90deg);
+}
+.disk .line:nth-child(6){
+    transform: rotate(112.5deg);
+}
+.disk .line:nth-child(7){
+    transform: rotate(135deg);
+}
+.disk .line:nth-child(8){
+    transform: rotate(157.5deg);
+}
+.disk .center {
+    block-size: 8px;
+    inline-size: 8px;
+    border-radius: 50%;
+    background-color: #5a5a5a;
+    transform: translate(-50%,-50%);
+    position: relative;
+    inset-inline-start: 50%;
+    inset-block-start: 50%;
+}
+
+.tail {
+    position: relative;
+    z-index: -1;
+    block-size: 82px;
+    inline-size: 60px;
+    background-color: #590c12;
+    transform: translate(400px, -185px) skew(-25deg, 0deg);
+}
+.tail__end {
+    block-size: 62px;
+    inline-size: 50px;
+    background-color: #f90000;
+    transform: translate(10px, 0px);
+}
+.bottom {
+    transform: translate(0px, -200px);
+}
+.bottom__first {
+    position: relative;
+    z-index: 52;
+    inline-size: 80px;
+    block-size: 20px;
+    background-color: #590c12;
+    transform: translate(160px, -0px) rotate(5deg);
+}
+.bottom__second {
+    position: relative;
+    z-index: 51;
+    inline-size: 120px;
+    block-size: 40px;
+    background-color: #590c12;
+    transform: translate(238px, -38.7px) rotate(-2deg);
+}
+.bort {
+    transform: translate(0px, -290px);
+}
+.bort__main {
+    position: relative;
+    z-index: -1;
+    inline-size: 180px;
+    block-size: 40px;
+    background-color: #be0002;
+    transform: translate(130px, -5px) skew(20deg);
+}
+.bort__main::after{
+    content: "";
+    position: relative;
+    z-index: -1;
+    inline-size: 50px;
+    block-size: 40px;
+    background-color: #be0002;
+    transform: translate(155px, 0px) skew(-20deg);
+    border-radius: 0 0 30%;
+    
+}
+.bort__bright {
+    position: absolute;
+    /* z-index: -1; */
+    inline-size: 214px;
+    block-size: 30px;
+    background-color: #f90000;
+    border-radius: 30% 0% 99% 0 ;
+    transform: translate(-10px, 5px) skew(-20deg) rotate(8deg);
+}
+
+.window {
+    position: relative;
+    z-index: -4;
+    background-color: #b41a1e;
+    inline-size: 54px;
+    block-size: 30px;
+    transform: translate(170px, -343px) rotate(-15deg) skew(-15deg);
+
+}
+.roof {
+    transform: translate(0, -390px);
+}
+.roof__dark {
+    position: relative;
+    z-index: -5;
+    inline-size: 120px;
+    block-size: 50px;
+    background-color: #590c12;
+    transform: translate(290px, -0px) rotate(25deg);
+    border-radius: 60% 0 0 20%;
+}
+.roof__midle {
+    position: relative;
+    z-index: -4;
+    inline-size: 120px;
+    block-size: 50px;
+    background-color: #b41a1e;
+    transform: translate(282px, -40px) rotate(25deg) skew(25deg);
+    border-radius: 50% 0 0 0;
+}
+.roof__bright {
+    position: relative;
+    z-index: -1;
+    inline-size: 120px;
+    block-size: 30px;
+    background-color: #f90000;
+    transform: translate(282px, -81px) rotate(25deg) skew(28deg);
+    border-radius: 50% 0 0 0;
+}
+.roof__bright::after{
+    content: "";
+    position: relative;
+    z-index: 1;
+    inline-size: 40px;
+    block-size: 20px;
+    background-color: #bb9d9d;
+    transform: translate(-29px, 25px) rotate(-20deg) skew(-23deg);
+    border-radius: 80% 0;
+    opacity: 0;
+}
+.roof__bright::before{
+    content: "";
+    position: relative;
+    z-index: 1;
+    inline-size: 120px;
+    block-size: 16px;
+    background-color: #f90000;
+    transform: translate(-25px, 25px) rotate(-24deg) skew(-23deg);
+    border-radius: 20% 50% 20% 0;
+}
+
+
+.sky {
+    background-color: rgb(128, 128, 255);
+    min-inline-size: 100%;
+    min-block-size: 300px;
+}
+.road {
+    background-color: rgb(58, 58, 62);
+    min-inline-size: 100%;
+    min-block-size: 200px;
+}
+.fence {
+    background-color: #5e5372;
+    position: relative;
+    z-index: 20;
+    border-top: 10px solid #4c435d;
+    border-bottom: 10px solid #4c435d;
+    transform: translate(0, 40px);
+
+}
+.fence-picture{
+    text-align: center;
+    vertical-align: middle;
+    block-size: 160px;
+    padding-block-start: 30px;
+}
+.fence-picture img {
+    block-size: 100px;
+}
+
+.forest-picture {
+    transform: translate(0px, 100px);
+}
