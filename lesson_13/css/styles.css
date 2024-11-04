@@ -185,7 +185,7 @@ header h1 {
 .portfolio__images .card:hover  {
     /* opacity: 0; */
     transform: scale(1.03);
-    transition: all 0.5 cubic-bezier(0.68,-0.55,0.265,1.55);
+    /* transition: all 5.5 cubic-bezier(0.68,-0.55,0.265,1.55); */
 }
 
 .portfolio__images .card img {
