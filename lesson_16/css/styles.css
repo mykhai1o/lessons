@@ -27,6 +27,8 @@ main {
 }
 footer {
     text-align: center;
+    padding: 15px;
+}
 }
 li {
     display: inline-block;
