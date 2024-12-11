@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Lesson 19</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header dark-background">
+			<div class="header__container">
+				<img class="header__logo" src="img/logo.svg" alt="Company logo">
+				<div class="header__menu menu-header">
+					<nav>
+						<ul class="menu-header__list">
+							<li>
+								<a href="#">About</a>
+							</li>
+							<li>
+								<a href="#">Services</a>
+							</li>
+							<li>
+								<a href="#">Pricing</a>
+							</li>
+							<li>
+								<a href="#">Blog</a>
+							</li>
+						</ul>
+					</nav>
+					<button class="contact-button">Contact</button>
+				</div>
+				<button class="contact-button">Contact</button>
+				<button class="menu-button" aria-label="menu button">
+					<span></span>
+				</button>
+			</div>
+		</header>
+		<main>
+			<section class="portfolio dark-background">
+				<div class="portfolio__container">
+					<div class="section-label">Portfolio</div>
+					<h1 class="section-title">Latest Work</h1>
+					<div class="portfolio__categories">
+						<div class="portfolio__burger burger-p">
+							<div class="burger-p__body">
+								<div>
+									<a href="#">Show All</a>
+									<button class="burger-p__arrow" aria-label="open menu list">
+										<img src="img/triangle.svg" alt="Arrow">
+									</button>
+								</div>
+								<ul>
+									<li>
+										<a href="#">Design</a>
+									</li>
+									<li>
+										<a href="#">Branding</a>
+									</li>
+									<li>
+										<a href="#">Illustration</a>
+									</li>
+									<li>
+										<a href="#">Motion</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<ul>
+							<li>
+								<a href="#">Show All<sup>14</sup></a>
+							</li>
+							<li>
+								<a href="#">Design<sup>6</sup></a>
+							</li>
+							<li>
+								<a href="#">Branding<sup>4</sup></a>
+							</li>
+							<li>
+								<a href="#">Illustration<sup>3</sup></a>
+							</li>
+							<li>
+								<a href="#">Motion<sup>1</sup></a>
+							</li>
+						</ul>
+					</div>
+					<div class="portfolio__images">
+						<article>
+							<a href="#" class="portfolio__card card">
+								<img src="img/stairs.webp" alt="Stairs">
+								<div class="card__category">
+									<div class="card__label">Design</div>
+									<h2 class="card__name">SOFA</h2>
+								</div>
+							</a>
+
+						</article>
+						<article>
+							<a href="#" class="portfolio__card card">
+								<img src="img/portfolio/arch.webp" alt="Stairs">
+								<div class="card__category">
+									<div class="card__label">Branding</div>
+									<h2 class="card__name">KeyBoard</h2>
+								</div>
+							</a>
+						</article>
+						<article>
+							<a href="#" class="portfolio__card card">
+								<img src="img/portfolio/cylinders.webp" alt="Stairs">
+								<div class="card__category">
+									<div class="card__label">Illustration</div>
+									<h2 class="card__name">Work Media</h2>
+								</div>
+							</a>
+						</article>
+						<article>
+							<a href="#" class="portfolio__card card">
+								<img src="img/portfolio/cubes.webp" alt="Stairs">
+								<div class="card__category">
+									<div class="card__label">Motion</div>
+									<h2 class="card__name">DDDone</h2>
+								</div>
+							</a>
+						</article>
+					</div>
+
+					<a href="#" class="portfolio__button section-button">Explore More</a>
+				</div>
+			</section>
+
+			<section class="contact-us">
+				<div class="contact-us__container">
+					<div class="contact-us__info">
+						<div class="section-label">Get Started</div>
+						<h2>We Help Companies<br>Move Faster</h2>
+						<button class="contact-us__button">Contact Us</button>
+					</div>
+					<div class="contact-us__card">
+						<img src="img/card.webp" alt="Card image">
+					</div>
+					<div class="contact-us__image">
+						<img src="img/get-started-woman.webp" alt="Woman with a dark hair in the pink blouse">
+					</div>
+				</div>
+			</section>
+
+			<section class="events dark-background">
+				<div class="events__container">
+					<div class="section-label">Events</div>
+					<h2 class="section-title">Explore Future<br>Conferences</h2>
+					<div class="events__schedule">
+						<article class="events__card card">
+							<div class="card__date">
+								<div>
+									<div class="card__day">3</div>
+									<div class="card__mounth">November<br>2021</div>
+								</div>
+								<div class="card__time"><time datetime="2021-11-03T13:00:00+02:00">1:00 pm – 8:00
+										pm</time></div>
+							</div>
+							<div class="card__info">
+								<h3>Design Weeks</h3>
+								<p>Digital agency is a business you hire to outsource your digital.</p>
+								<a href="#">Explore Now</a>
+							</div>
+						</article>
+						<article class="events__card card">
+							<div class="card__date">
+								<div>
+									<div class="card__day">15</div>
+									<div class="card__mounth">November<br>2021</div>
+								</div>
+								<div class="card__time"><time datetime="2021-11-15T13:00:00+02:00">1:00 pm – 8:00
+										pm</time></div>
+							</div>
+							<div class="card__info">
+								<h3>Interior Design</h3>
+								<p>Marketing efforts, instead of handling in-house.</p>
+								<a href="#">Explore Now</a>
+							</div>
+						</article>
+						<article class="events__card card">
+							<div class="card__date">
+								<div>
+									<div class="card__day">2</div>
+									<div class="card__mounth">December<br>2021</div>
+								</div>
+								<div class="card__time"><time datetime="2021-12-02T10:00:00+02:00">10:00 am – 2:00
+										pm</time></div>
+							</div>
+							<div class="card__info">
+								<h3>The F design events</h3>
+								<p>Provide your business with a variety of digital solutions to promote.</p>
+								<a href="#">Explore Now</a>
+							</div>
+						</article>
+					</div>
+					<a href="#" class="events__button section-button">Explore More</a>
+				</div>
+			</section>
+
+			<section class="our-team dark-background">
+				<div class="our-team__container">
+					<div class="our-team__header">
+						<div>
+							<div class="section-label">Our Team</div>
+							<h2 class="section-title">Team of Designers and Developers</h2>
+						</div>
+						<div>
+							<button>
+								<img src="img/our-team/left-arrow.svg" alt="Left arrow">
+							</button>
+							<button>
+								<img src="img/our-team/right-arrow.svg" alt="Right arrow">
+							</button>
+						</div>
+					</div>
+					<div class="our-team__body">
+						<article class="card-our-team">
+							<div class="card-our-team__image">
+								<img src="img/our-team/guy-in-hat.webp" alt="Guy in a dark green t-shirt and hat">
+							</div>
+							<div>
+								<h3>Azah Anyeni</h3>
+								<p>Designer</p>
+							</div>
+						</article>
+						<article class="card-our-team">
+							<div class="card-our-team__image">
+								<img src="img/our-team/guy-with-a-beard.webp"
+									alt="Guy with a short hair, beard and blue-pink t-shirt">
+							</div>
+							<div>
+								<div>
+									<h3>Roelof Bekkenenks</h3>
+									<p>React Developer</p>
+								</div>
+							</div>
+						</article>
+						<article class="card-our-team">
+							<div class="card-our-team__image">
+								<img src="img/our-team/dark-hair-girl.webp"
+									alt="Smiling girl with a dark hair in a red blouse">
+							</div>
+							<div>
+								<h3>Leonardo Oliveira</h3>
+								<p>Illustrator</p>
+							</div>
+						</article>
+						<article class="card-our-team">
+							<div class="card-our-team__image">
+								<img src="img/our-team/blond-hair-girl.webp"
+									alt="Girl with a blond hair in a grey blouse">
+							</div>
+							<div>
+								<h3>Izabella Tabakova</h3>
+								<p>Product Designer</p>
+							</div>
+						</article>
+					</div>
+					<div class="our-team__pages-dots">
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+			</section>
+			<section class="founder dark-background">
+				<div class="founder__container">
+					<div class="founder__image">
+						<img src="img/founder.webp" alt="Founder photo">
+					</div>
+					<div class="founder__text">
+						<div>
+							<h2 class="section-label">Founder Words</h2>
+							<blockquote class="section-title">
+								Digital agency is a business you hire to outsource your
+								digital marketing efforts
+							</blockquote>
+						</div>
+						<div class="founder__name">
+							<div>Ren Delan</div>
+							<div>Founder</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="testimonials dark-background">
+				<div class="testimonials__container">
+					<h2 class="testimonials__title">What Our Clients Saying</h2>
+
+					<div class="testimonials__cards">
+
+						<article class="card">
+							<div class="card__rating">
+								<img src="img/rating-stars.webp" alt="Rating stars">
+							</div>
+							<p class="card__text">
+								A digital agency is a business you have to outsource your digital
+								marketing efforts.
+							</p>
+							<div class="card__author">
+								<img src="img/oval1.webp" alt="Alan Marti" class="card__avatar">
+								<div>
+									<h3 class="card__name">Alan Marti</h3>
+									<div class="card__position">Web Developer</div>
+								</div>
+							</div>
+						</article>
+
+						<article class="card">
+							<div class="card__rating">
+								<img src="img/rating-stars.webp" alt="Rating stars">
+							</div>
+							<p class="card__text">Provide your customers with a variety of digital solutions to promote
+								your product.</p>
+							<div class="card__author">
+								<img src="img/oval2.webp" alt="Richard Kann" class="card__avatar">
+								<div>
+									<h3 class="card__name">Richard Kann</h3>
+									<div class="card__position">Photographer</div>
+								</div>
+							</div>
+						</article>
+
+						<article class="card">
+							<div class="card__rating">
+								<img src="img/rating-stars.webp" alt="Rating stars">
+							</div>
+							<p class="card__text">Customize your digital marketing efforts.</p>
+							<div class="card__author">
+								<img src="img/oval3.webp" alt="Graham Griffiths" class="card__avatar">
+								<div>
+									<h3 class="card__name">Graham Griffiths</h3>
+									<div class="card__position">Trainer</div>
+								</div>
+							</div>
+						</article>
+
+						<article class="card">
+							<div class="card__rating">
+								<img src="img/rating-stars.webp" alt="Rating stars">
+							</div>
+							<p class="card__text">Provide your product or service online and let your customers access
+								it easily.</p>
+							<div class="card__author">
+								<img src="img/oval4.webp" alt="Maria Trofimova" class="card__avatar">
+								<div>
+									<h3 class="card__name">Maria Trofimova</h3>
+									<div class="card__position">Web Analyst</div>
+								</div>
+							</div>
+						</article>
+					</div>
+					<a class="testimonials__button">See All</a>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container top-footer">
+				<div class="footer__title">
+					<h2>Agency</h2>
+				</div>
+				<div class="footer__list">
+					<h3>Menu</h3>
+					<ul>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+				<div class="footer__list">
+					<h3>Service</h3>
+					<ul>
+						<li><a href="#">Design</a></li>
+						<li><a href="#">Development</a></li>
+						<li><a href="#">Marketing</a></li>
+						<li><a href="#">See More</a></li>
+					</ul>
+				</div>
+				<div class="footer__icons">
+					<a href="#" class="social-icon"><img src="img/facebook.svg" alt="Facebook"></a>
+					<a href="#" class="social-icon"><img src="img/twitter.svg" alt="Twitter"></a>
+					<a href="#" class="social-icon"><img src="img/instagram.svg" alt="Instagram"></a>
+				</div>
+			</div>
+			<div class="footer__container bottom-footer">
+				<p>© 2022 Lasqip. All Rights Reserved.</p>
+				<div class="footer__links">
+					<a href="#">Terms of Use</a>
+					<a href="#">Privacy Policy</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
