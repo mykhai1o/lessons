@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:regular,500,600&display=swap');
+
+@import url('reset.css');
+
+:root {
+    --main-background-color: #fff;
+    --main-title-color: #132238;
+    --main-text-color: #556070;
+    --menu-links-color: #333;
+    --accent-color: #A53DFF;
+    --accent-text-color: #fff;
+
+
+}
+
+/* *:not(a, li) {
+    border: 1px dashed red;
+} */
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    /* color: transparent; */
+    min-inline-size: 20rem;
+    opacity: 0;
+    /* 320px */
+    transition: all 0.3s;
+}
+
+body.showed {
+    opacity: 1;
+}
+
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+    
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+main {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+}
+
+
+
+li a {
+    border-bottom: 0.0625rem transparent solid;
+    /* 1px */
+    transition: all 0.3s;
+}
+
+[class*='__container'] {
+    max-inline-size: 84.375rem;
+    /* 1350px */
+    min-inline-size: 20rem;
+    /* 320px */
+    padding: 0.9375rem;
+    /* 15px */
+    margin: 0 auto;
+
+
+}
+
+.item, .item4 {
+    background-color: #132238;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    inline-size: 300px;
+    transition: all 0.3s;
+}
+
+
+.item.active {
+    background-color: #053b8b;
+
+}
