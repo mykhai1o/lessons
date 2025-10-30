@@ -1,0 +1,11 @@
+.search-popup {
+    // .search-popup__input
+    display: flex;
+    gap: toRem(15);
+    align-items: center;
+    &__input {
+    }
+    // .search-popup__button
+    &__button {
+    }
+}

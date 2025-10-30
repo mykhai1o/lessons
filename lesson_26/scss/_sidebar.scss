@@ -1,0 +1,111 @@
+.released-year {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: toRem(5) toRem(10);
+    // .released-year__item
+    &__item {
+    }
+    // .released-year__link
+    &__link {
+        color: var(--light-color-1);
+        font-weight: 600;
+        @include adaptiveValue("font-size", 20, 16);
+        text-decoration: underline;
+        text-decoration-color: transparent;
+        text-decoration-thickness: toRem(1.5);
+        text-underline-offset: toEm(2);
+        transition: text-decoration-color 0.3s ease;
+        @media (any-hover: hover) {
+            &:hover {
+                text-decoration-color: var(--light-color-1);
+            }
+        }
+    }
+}
+
+// ============================================================================
+// Available Languages  +  Genres
+.inner-sidebar {
+    // .inner-sidebar__items
+    &__items {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: toRem(10);
+    }
+    // .inner-sidebar__item
+    &__item {
+        background-color: var(--bg-color);
+        border: toRem(1) solid var(--dark-color-4);
+        border-radius: toRem(6);
+        @include adaptiveValue("padding-block", 8, 6);
+        @include adaptiveValue("padding-inline", 14, 12);
+    }
+    // .inner-sidebar__link
+    &__link {
+        color: var(--light-color-1);
+        font-weight: 500;
+        @include adaptiveValue("font-size", 18, 14);
+        text-decoration: underline;
+        text-decoration-color: transparent;
+        text-decoration-thickness: toRem(1);
+        text-underline-offset: toEm(2);
+        transition: text-decoration-color 0.3s ease;
+        @media (any-hover: hover) {
+            &:hover {
+                text-decoration-color: var(--light-color-1);
+            }
+        }
+    }
+}
+
+// ===============================================================================
+.rating-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: toRem(20);
+    // .rating-items__rating
+    &__rating {
+    }
+}
+
+// =====================================================================================
+// Directors + Music
+.card-sidebar {
+    background-color: var(--bg-color);
+    border: toRem(1) solid var(--dark-color-4);
+    border-radius: toRem(8);
+    @include adaptiveValue("padding", 14, 10);
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: toRem(20);
+
+    // .card-sidebar__img
+    &__img {
+        border-radius: toRem(8);
+        aspect-ratio: 1;
+        max-inline-size: toRem(56);
+    }
+    // .card-sidebar__body
+    &__body {
+    }
+    // .card-sidebar__title
+    &__title {
+        color: var(--light-color-1);
+        font-weight: 500;
+        @include adaptiveValue("font-size", 18, 16);
+    }
+    // .card-sidebar__country
+    &__country {
+        font-weight: 500;
+        @include adaptiveValue("font-size", 16, 14);
+    }
+}

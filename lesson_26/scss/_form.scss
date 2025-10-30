@@ -1,0 +1,76 @@
+.inner__section:has(.support-form) {
+    background-color: var(--dark-color-2);
+    // @include adaptiveValue("padding", 50, 24);
+}
+
+.support-form {
+    // .support-form__items
+    &__items {
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        // gap: toRem(20);
+        @include adaptiveValue("gap", 50, 20);
+        &:not(:last-child) {
+            @include adaptiveValue("margin-block-end", 50, 20);
+        }
+    }
+    // .support-form__item
+    &__item {
+        flex-basis: min(toRem(302), 100%);
+        flex-grow: 1;
+        // &:not(:last-child) {
+        //     @include adaptiveValue("margin-block-end", 50, 20);
+        // }
+    }
+    // .support-form__label
+    &__label {
+        @include adaptiveValue("font-weight", 600, 400);
+
+        color: var(--light-color-1);
+        display: inline-block;
+        &:not(:last-child) {
+            @include adaptiveValue("margin-block-end", 16, 12);
+        }
+    }
+    // .support-form__input
+    &__input {
+        // flex-basis: toRem(413);
+        &::placeholder {
+            // color: var(--main-color);
+            @include adaptiveValue("font-size", 18, 16);
+        }
+    }
+    // .support-form__phone
+    &__phone {
+        display: flex;
+        // justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: toRem(12);
+        .support-form__input {
+            flex-basis: toRem(260);
+            flex-grow: 1;
+        }
+    }
+    // .support-form__select
+    &__select {
+    }
+    // .support-form__footer
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: toRem(20);
+    }
+    // .support-form__checkbox
+    &__checkbox {
+    }
+    // .support-form__button
+    &__button {
+    }
+}
+.input {
+}
